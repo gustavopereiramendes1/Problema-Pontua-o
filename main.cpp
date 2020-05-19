@@ -48,11 +48,6 @@ int main()
 
     cout << endl;
 
-    cout << "Classificação final = " << "CLIENTE BRONZE" << endl;
-
-    cout << "Classificação final = " << "CLIENTE PRATA"<< endl;
-
-    cout << "Classificação final = " << "CLIENTE OURO"<< endl;
 
     if (QuanCompra <= 2 && ValordaCompra <=3000){
         ScoreV = 20;
@@ -77,12 +72,6 @@ int main()
         ScoreI = 0;
     }
 
-    if (TipodaCompra == 'C' || TipodaCompra == 'B'){
-        ScoreFP = 10;
-    }
-    else {
-        ScoreFP = 5;
-    }
 
 
     return 0;
