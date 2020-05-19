@@ -67,5 +67,23 @@ int main()
        ScoreV= 0 ;
     }
 
+    if (PagamentoAtrasado == 1 || QuanCompra > 0 ){
+        ScoreI = 15;
+    }
+    else if (PagamentoAtrasado == 0 && QuanCompra > 0){
+        ScoreI = 30;
+    }
+    else{
+        ScoreI = 0;
+    }
+
+    if (TipodaCompra == 'C' || TipodaCompra == 'B'){
+        ScoreFP = 10;
+    }
+    else {
+        ScoreFP = 5;
+    }
+
+
     return 0;
 }
