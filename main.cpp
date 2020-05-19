@@ -72,6 +72,12 @@ int main()
         ScoreI = 0;
     }
 
+    if (TipodaCompra == 'C' || TipodaCompra == 'B'){
+        ScoreFP = 10;
+    }
+    else {
+        ScoreFP = 5;
+    }
 
 
     return 0;
