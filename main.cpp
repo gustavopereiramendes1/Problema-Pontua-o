@@ -1,4 +1,4 @@
-#include <iostream>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -53,6 +53,19 @@ int main()
     cout << "Classificação final = " << "CLIENTE PRATA"<< endl;
 
     cout << "Classificação final = " << "CLIENTE OURO"<< endl;
+
+    if (QuanCompra <= 2 && ValordaCompra <=3000){
+        ScoreV = 20;
+    }
+    else if (QuanCompra > 2 && ValordaCompra <= 3000){
+        ScoreV = 40;
+    }
+    else if (ValordaCompra > 3000){
+        ScoreV =  60;
+    }
+    else{
+       ScoreV= 0 ;
+    }
 
     return 0;
 }
