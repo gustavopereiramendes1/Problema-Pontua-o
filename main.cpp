@@ -79,6 +79,18 @@ int main()
         ScoreFP = 5;
     }
 
+    ScoreF = ScoreFP + ScoreI + ScoreV;
+
+    if (ScoreF<=25){
+        cout << "Classificação final = " << "CLIENTE BRONZE" << endl;
+    }
+    else if (ScoreF>25 && ScoreF <= 75){
+        cout << "Classificação final = " << "CLIENTE PRATA"<< endl;
+    }
+    else{
+        cout << "Classificação final = " << "CLIENTE OURO" << endl;
+    }
+
 
     return 0;
 }
